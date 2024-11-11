@@ -1,0 +1,262 @@
+/* Basic styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    
+        background-image: url('./Shawaiz.jpg'); /* Path to your background image */
+        background-size: cover; /* Makes the background image cover the entire area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        color: #fff; /* Ensures text is readable against the background */
+   
+}
+
+/* Header and footer */
+header, footer {
+    background: linear-gradient(to right, #535151, #deba6d);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.hee {
+    background-image: url('./Home1.jpg');
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    height: 200px; /* Set a height for the header */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-align: center; /* Center text */
+}
+
+.fee{
+    
+        background-image: url('./ff1.png');
+        background-size: cover; /* Cover the entire header */
+        background-position: center; /* Center the image */
+        height: 90px; /* Set a height for the header */
+        color: white; /* Text color */
+        display: flex;
+        align-items: center; /* Center text vertically */
+        justify-content: center; /* Center text horizontally */
+        text-align: center; /* Center text */
+    }
+
+
+
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.navbar:hover {
+    background-color: rgba(248, 249, 250, 0.9); /* Slightly darken on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.navbar-brand {
+    color: #d9534f; /* Red color for brand */
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1); /* Slightly enlarge brand on hover */
+}
+
+.nav-link {
+    color: #333; /* Dark color for links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+    color: #d9534f; /* Change link color on hover */
+    transform: translateY(-2px); /* Slightly move up on hover */
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.navbar-toggler {
+    border-color: #d9534f; /* Red border for toggler */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.1); /* Slightly enlarge toggler on hover */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="%23d9534f"%3E%3Cpath stroke="rgba(0,0,0,0.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Custom red toggler icon */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.navbar-toggler:focus .navbar-toggler-icon {
+    transform: rotate(90deg); /* Rotate icon when toggler is focused */
+}
+
+/* Adding a responsive effect for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+        border-radius: 0; /* Remove rounding on small screens */
+    }
+}
+/* Main layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Column layout */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 0 0 250px;
+    padding: 20px;
+}
+
+/* Floated images */
+img.floated {
+    float: right;
+    margin-left: 20px;
+    max-width: 200px;
+}
+img.ban{
+    height: 300px;
+    width:600px
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        flex: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .two-column {
+        display: flex;
+    }
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s; /* Add transform for scaling effect */
+}
+
+.product:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    transition: color 0.3s; /* Transition for color change */
+}
+
+.product:hover h2 {
+    color: #333; /* Change heading color on hover */
+}
+
+.product p {
+    font-size: 1.5em;
+    color: #333; /* Dark text color */
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: 2px solid white; /* White border */
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s; /* Added transition for color change */
+}
+
+.add-to-cart:hover {
+    background-color: white; /* Change to white on hover */
+    color: black; /* Change text to black */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+
+.about-section {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+}
+
+.profile-image {
+    width: 40%; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.text-container {
+    flex: 1; /* Allow text container to take remaining space */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Aligns main content and the side image */
+}
+
+.main {
+    flex: 1; /* Allows the main section to take available space */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.product {
+    flex: 1; /* Distributes space evenly among products */
+    margin-right: 20px; /* Space between products */
+    text-align: center;
+}
+
+.product:last-child {
+    margin-right: 0; /* Removes right margin from the last product */
+}
+
+.side-image {
+    width: 30%; /* Adjust the width as needed */
+    padding: 20px; /* Space around the image */
+}
+
+.side-image img {
+    width: 100%; /* Makes the image responsive */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
